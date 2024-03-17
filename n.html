@@ -1,0 +1,153 @@
+<section>
+  <form>
+    <div class="book-outer glassmorph">
+      <div class="book-inner">
+        <div class="book-item destination">
+          <div class="book-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.25589 16C3.8899 15.0291 3 13.4422 3 11.6493C3 9.20008 4.8 6.9375 7.5 6.5C8.34694 4.48637 10.3514 3 12.6893 3C15.684 3 18.1317 5.32251 18.3 8.25C19.8893 8.94488 21 10.6503 21 12.4969C21 14.0582 20.206 15.4339 19 16.2417M12 21V11M12 21L9 18M12 21L15 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="book-item-content">
+            <p>Destinaton</p>
+            <div>
+              <input placeholder="Where To?" />
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="book-item date">
+          <div class="book-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.25589 16C3.8899 15.0291 3 13.4422 3 11.6493C3 9.20008 4.8 6.9375 7.5 6.5C8.34694 4.48637 10.3514 3 12.6893 3C15.684 3 18.1317 5.32251 18.3 8.25C19.8893 8.94488 21 10.6503 21 12.4969C21 14.0582 20.206 15.4339 19 16.2417M12 21V11M12 21L9 18M12 21L15 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="book-item-content">
+            <p>Date</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="book-item guests">
+          <div class="book-item-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.25589 16C3.8899 15.0291 3 13.4422 3 11.6493C3 9.20008 4.8 6.9375 7.5 6.5C8.34694 4.48637 10.3514 3 12.6893 3C15.684 3 18.1317 5.32251 18.3 8.25C19.8893 8.94488 21 10.6503 21 12.4969C21 14.0582 20.206 15.4339 19 16.2417M12 21V11M12 21L9 18M12 21L15 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="book-item-content">
+            <p>Guests</p>
+            <div><input type="number" value="1" /> <span>Guests</span></div>
+          </div>
+        </div>
+        <button>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.25589 16C3.8899 15.0291 3 13.4422 3 11.6493C3 9.20008 4.8 6.9375 7.5 6.5C8.34694 4.48637 10.3514 3 12.6893 3C15.684 3 18.1317 5.32251 18.3 8.25C19.8893 8.94488 21 10.6503 21 12.4969C21 14.0582 20.206 15.4339 19 16.2417M12 21V11M12 21L9 18M12 21L15 18"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<style>
+  section {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .book-outer {
+    padding: 15px;
+    background: #777;
+    width: max-content;
+  }
+  .book-inner {
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cJpgf9cT_70t2GkGfxm4mAHaHa%26pid%3DApi&f=1&ipt=37d7b58e3d9f5e840d06d99bd3f64ad598f138e55300560b74db72dcb81cfe40&ipo=images"),
+      white;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .book-inner > .line {
+    align-self: stretch;
+    background: #222;
+    width: 1px;
+    margin: 15px 0;
+    border: none;
+  }
+  .book-item {
+    display: flex;
+    gap: 20px;
+  }
+  .book-item-icon {
+    width: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .book-inner > button {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .book-item.destination {
+    backdrop-filter: blur(15px);
+  }
+
+  .book-item.date {
+    background: rgba(255, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+  }
+
+  .book-item-content input {
+    outline: none;
+    background: #0001;
+    border: none;
+    max-width: 150px;
+  }
+  .book-item.guests > .book-item-content input {
+    max-width: 50px;
+  }
+</style>
